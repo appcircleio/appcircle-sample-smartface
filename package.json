@@ -10,6 +10,6 @@
 	"scripts": {
 		"dev": "tsc -w",
 		"build": "rm -rf ./dist && tsc",
-		"build:transpile": "SMF_CIDE_WS_PATH=$PWD sfBuilder && tsc"
+		"build:transpile": "SMF_CIDE_WS_PATH=$PWD sfBuilder"
 	}
 }
