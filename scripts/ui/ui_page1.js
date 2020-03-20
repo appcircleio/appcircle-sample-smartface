@@ -45,12 +45,7 @@ function $Page1(_super, props) {
 $Page1.$$styleContext = {
 	classNames: '.sf-page',
 	defaultClassNames: ' .default_page',
-	userProps: {
-		flexProps: { justifyContent: 'SPACE_BETWEEN', alignItems: 'STRETCH' },
-		paddingBottom: 20,
-		paddingLeft: 16,
-		paddingRight: 16
-	},
+	userProps: { flexProps: { justifyContent: 'SPACE_BETWEEN', alignItems: 'STRETCH' }, paddingBottom: 20, paddingLeft: 16, paddingRight: 16 },
 	statusBar: {
 		classNames: '.sf-statusBar',
 		defaultClassNames: ' .default_statusBar',
@@ -74,13 +69,7 @@ $Lbl.$$styleContext = {
 	userProps: {
 		backgroundColor: 'rgba( 255, 255, 255, 0 )',
 		flexProps: { alignSelf: 'STRETCH', flexGrow: 1 },
-		font: {
-			size: 32,
-			bold: false,
-			italic: false,
-			family: 'SFProText',
-			style: 'Regular'
-		},
+		font: { size: 32, bold: false, italic: false, family: 'SFProText', style: 'Regular' },
 		height: 90,
 		multiline: true,
 		textAlignment: 'MIDCENTER',
@@ -98,10 +87,7 @@ function $BtnNext(_super, pageInstance) {
 $BtnNext.$$styleContext = {
 	classNames: '.sf-button',
 	defaultClassNames: '.default_common .default_button',
-	userProps: {
-		flexProps: { alignSelf: 'AUTO', positionType: 'RELATIVE' },
-		width: null
-	}
+	userProps: { flexProps: { alignSelf: 'AUTO', positionType: 'RELATIVE' }, width: null }
 };
 const $BtnNext_ = Button($BtnNext);
 

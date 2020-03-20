@@ -53,9 +53,7 @@ $Simple_listviewitem$$LblChevron.$$styleContext = {
 	defaultClassNames: '.default_common .default_label',
 	userProps: { marginRight: 16 }
 };
-const $Simple_listviewitem$$LblChevron_ = Label(
-	$Simple_listviewitem$$LblChevron
-);
+const $Simple_listviewitem$$LblChevron_ = Label($Simple_listviewitem$$LblChevron);
 
 function $Simple_listviewitem$$FlLine(_super, pageInstance) {
 	_super(this);

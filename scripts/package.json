@@ -8,6 +8,5 @@
         "sf-core": "^4.1.0",
         "sf-extension-utils": "^11.0.0"
     },
-    "scripts": {
-    }
+    "scripts": {}
 }

@@ -45,12 +45,7 @@ function $Page2(_super, props) {
 $Page2.$$styleContext = {
 	classNames: '.sf-page',
 	defaultClassNames: ' .default_page',
-	userProps: {
-		flexProps: { justifyContent: 'SPACE_AROUND' },
-		paddingBottom: 20,
-		paddingLeft: 16,
-		paddingRight: 16
-	},
+	userProps: { flexProps: { justifyContent: 'SPACE_AROUND' }, paddingBottom: 20, paddingLeft: 16, paddingRight: 16 },
 	statusBar: {
 		classNames: '.sf-statusBar',
 		defaultClassNames: ' .default_statusBar',
@@ -74,13 +69,7 @@ $Lbl.$$styleContext = {
 	userProps: {
 		backgroundColor: 'rgba( 255, 255, 255, 0 )',
 		flexProps: { alignSelf: 'STRETCH', flexGrow: 1 },
-		font: {
-			size: 32,
-			bold: false,
-			italic: false,
-			family: 'SFProText',
-			style: 'Regular'
-		},
+		font: { size: 32, bold: false, italic: false, family: 'SFProText', style: 'Regular' },
 		height: 90,
 		left: 0,
 		multiline: true,
@@ -100,12 +89,7 @@ function $BtnSayHello(_super, pageInstance) {
 $BtnSayHello.$$styleContext = {
 	classNames: '.sf-button',
 	defaultClassNames: '.default_common .default_button',
-	userProps: {
-		flexProps: { alignSelf: 'AUTO', positionType: 'RELATIVE' },
-		left: 0,
-		top: 0,
-		width: null
-	}
+	userProps: { flexProps: { alignSelf: 'AUTO', positionType: 'RELATIVE' }, left: 0, top: 0, width: null }
 };
 const $BtnSayHello_ = Button($BtnSayHello);
 

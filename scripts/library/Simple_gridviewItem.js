@@ -43,9 +43,7 @@ $Simple_gridviewItem$$ImgPreview.$$styleContext = {
 	defaultClassNames: '.default_common .default_imageView',
 	userProps: {}
 };
-const $Simple_gridviewItem$$ImgPreview_ = ImageView(
-	$Simple_gridviewItem$$ImgPreview
-);
+const $Simple_gridviewItem$$ImgPreview_ = ImageView($Simple_gridviewItem$$ImgPreview);
 
 function $Simple_gridviewItem$$LblTitle(_super, pageInstance) {
 	_super(this, { text: 'Grid Title Here' });
@@ -65,8 +63,6 @@ $Simple_gridviewItem$$LblSubtitle.$$styleContext = {
 	defaultClassNames: '.default_common .default_label',
 	userProps: {}
 };
-const $Simple_gridviewItem$$LblSubtitle_ = Label(
-	$Simple_gridviewItem$$LblSubtitle
-);
+const $Simple_gridviewItem$$LblSubtitle_ = Label($Simple_gridviewItem$$LblSubtitle);
 
 module.exports = Simple_gridviewItem_;

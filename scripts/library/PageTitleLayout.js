@@ -28,12 +28,7 @@ function PageTitleLayout(_super, props) {
 PageTitleLayout.$$styleContext = {
 	classNames: '.sf-flexLayout',
 	defaultClassNames: '.default_common .default_flexLayout',
-	userProps: {
-		backgroundColor: 'rgba( 255, 255, 255, 0 )',
-		flexProps: { justifyContent: 'CENTER' },
-		height: 24,
-		width: 150
-	}
+	userProps: { backgroundColor: 'rgba( 255, 255, 255, 0 )', flexProps: { justifyContent: 'CENTER' }, height: 24, width: 150 }
 };
 const PageTitleLayout_ = FlexLayout(PageTitleLayout);
 
