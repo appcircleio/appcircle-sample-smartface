@@ -2,5 +2,14 @@
 	"dependencies": {
 		"@smartface/smartface.ui-editor": "6.15.1"
 	},
-	"marketplace-assets": {}
+	"marketplace-assets": {},
+	"devDependencies": {
+		"typescript": "^3.7.5",
+		"@smartface/wsbuilder": "^1.0.0-beta.0"
+	},
+	"scripts": {
+		"dev": "tsc -w",
+		"build": "rm -rf ./dist && tsc",
+		"build:transpile": "SMF_CIDE_WS_PATH=$PWD sfBuilder && tsc"
+	}
 }
