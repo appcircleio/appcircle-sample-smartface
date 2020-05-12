@@ -63,7 +63,8 @@
                         "active": false
                     }
                 },
-                "playerPath": null
+                "playerPath": null,
+                "licenseType": "Demo"
             },
             "android": {
                 "scripts": "scripts",
