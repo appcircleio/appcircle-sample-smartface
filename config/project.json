@@ -57,10 +57,9 @@
                 "urlIdentifier": "",
                 "urlSchemes": "",
                 "plugins": {
-                    "codereaderios": {
-                        "url": "https://az793023.vo.msecnd.net/smartface-bin/plugins/CodeReader/iOS/2.0.0/codereaderios.zip",
-                        "path": "plugins/iOS/codereaderios.zip",
-                        "active": false
+                    "calculator": {
+                        "path": "plugins/iOS/calculator-plugin.zip",
+                        "active": true
                     }
                 },
                 "playerPath": null,
@@ -79,10 +78,8 @@
                     "keyPass": "smartface"
                 },
                 "plugins": {
-                    "aars": {
-                    },
-                    "modules": {
-                    }
+                    "aars": {},
+                    "modules": {}
                 },
                 "playerPath": null
             },

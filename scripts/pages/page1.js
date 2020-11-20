@@ -10,7 +10,7 @@ const Page1Design = require("ui/ui_page1");
 
 const Page1 = extend(Page1Design)(
     // Constructor
-    function(_super, routeData, router) {
+    function (_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
         // Overrides super.onShow method
@@ -30,6 +30,8 @@ const Page1 = extend(Page1Design)(
  */
 function onShow(superOnShow) {
     superOnShow();
+    var calculatorPluginObject1 = new SMFCalculator()
+    alert(calculatorPluginObject1.getTotal(5, 2));
     this.headerBar.titleLayout.applyLayout();
 }
 /**
