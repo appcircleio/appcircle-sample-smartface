@@ -57,7 +57,7 @@
                 "urlIdentifier": "",
                 "urlSchemes": "",
                 "plugins": {
-                    "calculator": {
+                    "calculator-plugin": {
                         "path": "plugins/iOS/calculator-plugin.zip",
                         "active": true
                     }
