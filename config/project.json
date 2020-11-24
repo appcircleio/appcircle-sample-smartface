@@ -61,8 +61,8 @@
                         "path": "plugins/iOS/calculator-plugin.zip",
                         "active": true
                     },
-                    "ios-plugin-sample": {
-                        "path": "plugins/iOS/ios-plugin-sample.zip",
+                    "ios-remote-dependency": {
+                        "path": "plugins/iOS/ios-remote-dependency.zip",
                         "active": true
                     }
                 },
