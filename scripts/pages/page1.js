@@ -5,6 +5,8 @@ const PageTitleLayout = require("components/PageTitleLayout");
 const extend = require("js-base/core/extend");
 const System = require("sf-core/device/system");
 const Color = require("sf-core/ui/color");
+const Label = require("sf-core/ui/label");
+const YGUnit = require('sf-core/util').YogaEnums.YGUnit;
 // Get generated UI code
 const Page1Design = require("ui/ui_page1");
 
