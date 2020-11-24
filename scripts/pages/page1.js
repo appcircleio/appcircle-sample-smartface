@@ -32,6 +32,7 @@ function onShow(superOnShow) {
     superOnShow();
     var calculatorPluginObject1 = new SMFCalculator()
     alert(calculatorPluginObject1.getTotal(5, 2));
+
     this.headerBar.titleLayout.applyLayout();
 }
 /**
@@ -48,6 +49,21 @@ function onLoad(superOnLoad) {
     if (System.OS === "Android") {
         this.headerBar.title = "";
     }
+
+    var calendarView = new SMFHorizontalCalendar()
+    calendarView.backgroundColor = Color.RED.nativeObject;
+    calendarView.yoga.isEnabled = true;
+    console.log("Yoga enabled");
+    calendarView.yoga.setYGValueUnitForKey(300, YGUnit.Point, "width");
+    calendarView.yoga.setYGValueUnitForKey(300, YGUnit.Point, "height");
+
+    this.layout.addChild({ nativeObject: calendarView })
+
+    this.layout.addChild(new Label({
+        backgroundColor: Color.BLUE,
+        width: 300,
+        height: 300
+    }))
 }
 
 module.exports = Page1;

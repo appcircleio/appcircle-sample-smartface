@@ -60,6 +60,10 @@
                     "calculator-plugin": {
                         "path": "plugins/iOS/calculator-plugin.zip",
                         "active": true
+                    },
+                    "ios-plugin-sample": {
+                        "path": "plugins/iOS/ios-plugin-sample.zip",
+                        "active": true
                     }
                 },
                 "playerPath": null,
