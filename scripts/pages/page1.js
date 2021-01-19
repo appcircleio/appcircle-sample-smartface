@@ -6,6 +6,9 @@ const extend = require("js-base/core/extend");
 const System = require("sf-core/device/system");
 const ImageView = require("sf-core/ui/imageview");
 const Image = require("sf-core/ui/image");
+const Color = require("sf-core/ui/color");
+import ListView = require('sf-core/ui/listview');
+import ListViewItem = require('sf-core/ui/listviewitem');
 
 // Get generated UI code
 const Page1Design = require("ui/ui_page1");
@@ -49,14 +52,45 @@ function onLoad(superOnLoad) {
         this.headerBar.title = "";
     }
     
-    this.myImage = Image.createFromFile("images://smartface.png")
-    this.myImageView = new ImageView({
-        image: this.myImage,
-        width: 200,
-        height: 300
+    this.myListView = new ListView({
+        itemCount: 30,
+        flexGrow: 1
     });
 
-    this.layout.addChild(this.myImageView);
+    this.myListView.height = 300;
+    this.myListView.rowHeight = 70;
+
+    this.myListView.onRowCreate = () => {
+        let myListViewItem = new ListViewItem();
+
+        myListViewItem.backgroundColor = Color.GRAY;
+
+        let myLabelTitle = new Label({
+            flexGrow: 1
+        });
+
+        let imgView = new ImageView({
+            image: Image.createFromFile("images://smartface.png"),
+            width: 70,
+            height: 60
+        })
+
+        myLabelTitle.textColor = Color.WHITE;
+        myLabelTitle.borderRadius = 10;
+        
+        //@ts-ignore
+        myListViewItem.addChild(myLabelTitle);
+        myListViewItem.addChild(imgView);
+        //@ts-ignore
+        myListViewItem.myLabelTitle = myLabelTitle;
+        return myListViewItem;
+    };
+    this.myListView.onRowBind = (listViewItem, index) => {
+        let myLabelTitle = listViewItem.myLabelTitle;
+        myLabelTitle.text = "Index " + index;
+    };
+
+    this.layout.addChild(this.myListView);
 }
 
 module.exports = Page1;
