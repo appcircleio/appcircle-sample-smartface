@@ -4,6 +4,8 @@ const PageTitleLayout = require("components/PageTitleLayout");
 
 const extend = require("js-base/core/extend");
 const System = require("sf-core/device/system");
+const ImageView = require("sf-core/ui/imageview");
+const Image = require("sf-core/ui/image");
 
 // Get generated UI code
 const Page1Design = require("ui/ui_page1");
@@ -46,6 +48,15 @@ function onLoad(superOnLoad) {
     if (System.OS === "Android") {
         this.headerBar.title = "";
     }
+    
+    this.myImage = Image.createFromFile("images://smartface.png")
+    this.myImageView = new ImageView({
+        image: this.myImage,
+        width: 200,
+        height: 300
+    });
+
+    this.layout.addChild(this.myImageView);
 }
 
 module.exports = Page1;
