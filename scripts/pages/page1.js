@@ -6,9 +6,10 @@ const extend = require("js-base/core/extend");
 const System = require("sf-core/device/system");
 const ImageView = require("sf-core/ui/imageview");
 const Image = require("sf-core/ui/image");
+const Label = require("sf-core/ui/label");
 const Color = require("sf-core/ui/color");
-import ListView = require('sf-core/ui/listview');
-import ListViewItem = require('sf-core/ui/listviewitem');
+const ListView = require('sf-core/ui/listview');
+const ListViewItem = require('sf-core/ui/listviewitem');
 
 // Get generated UI code
 const Page1Design = require("ui/ui_page1");
@@ -54,7 +55,7 @@ function onLoad(superOnLoad) {
     
     this.myListView = new ListView({
         itemCount: 30,
-        flexGrow: 1
+        flexGrow: 3
     });
 
     this.myListView.height = 300;
