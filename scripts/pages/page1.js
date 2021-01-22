@@ -53,6 +53,11 @@ function onLoad(superOnLoad) {
         this.headerBar.title = "";
     }
     
+    const activity = require("sf-core/util/Android/androidconfig").activity;
+    let id = activity.getResources().getIdentifier("lbl_page1", "id", activity.getPackageName());
+    alert("id: " + id);
+    this.lbl.nativeObject.setId(id);
+    
     this.myListView = new ListView({
         itemCount: 30,
         flexGrow: 3
@@ -61,7 +66,6 @@ function onLoad(superOnLoad) {
     this.myListView.height = 300;
     this.myListView.rowHeight = 70;
 
-    const Invocation = require('sf-core/util/iOS/invocation.js');
     
     this.myListView.onRowCreate = () => {
         let myListViewItem = new ListViewItem();
@@ -77,19 +81,6 @@ function onLoad(superOnLoad) {
             width: 70,
             height: 60
         });
-
-        var idletimerdisabled = new Invocation.Argument({
-            type: "BOOL",
-            value: true
-        });
-
-        let isAccessibilityElement = Invocation.invokeInstanceMethod(imgView.nativeObject, "isAccessibilityElement", [], "BOOL"); 
-        console.info("isAccessibilityElement > ", isAccessibilityElement);
-
-        Invocation.invokeInstanceMethod(imgView.nativeObject, "setIsAccessibilityElement:", [idletimerdisabled]);
-
-        isAccessibilityElement = Invocation.invokeInstanceMethod(imgView.nativeObject, "isAccessibilityElement", [], "BOOL"); 
-        console.info("isAccessibilityElement > ", isAccessibilityElement);
 
         myLabelTitle.textColor = Color.WHITE;
         myLabelTitle.borderRadius = 10;
