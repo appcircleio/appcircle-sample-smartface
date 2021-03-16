@@ -4,8 +4,8 @@
 	},
 	"marketplace-assets": {},
 	"devDependencies": {
-		"typescript": "^3.7.5",
-		"@smartface/wsbuilder": "^2.0.4"
+	    "typescript": "^3.7.5",
+	    "@smartface/wsbuilder": "^2.0.4"
 	},
 	"scripts": {
 		"dev": "tsc -w",
