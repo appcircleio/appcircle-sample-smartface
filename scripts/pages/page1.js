@@ -77,6 +77,9 @@ var Page1 = extend(Page)(
             var myLabelTitle = listViewItem.myLabelTitle;
             myLabelTitle.text = myDataSet[index].title;
             myLabelTitle.backgroundColor = myDataSet[index].backgroundColor;
+            
+            // for ios
+            myLabelTitle.testId = myDataSet[index].title;
         };
         myListView.onRowSelected = function(listViewItem, index) {
             console.log("selected index = " + index)
