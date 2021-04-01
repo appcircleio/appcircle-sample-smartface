@@ -7,12 +7,14 @@ const ListView = require('sf-core/ui/listview');
 const ListViewItem = require('sf-core/ui/listviewitem');
 const TextAlignment = require('sf-core/ui/textalignment');
 const Font = require('sf-core/ui/font');
+const DatePicker = require('sf-core/ui/datepicker');
 
 var Page1 = extend(Page)(
     function(_super) {
         _super(this, {
             onShow: function(params) {
                 this.headerBar.visible = false;
+                myDatePicker.show();
             }
         });
         this.layout.flexDirection = FlexLayout.FlexDirection.ROW;
@@ -54,6 +56,10 @@ var Page1 = extend(Page)(
             itemCount: myDataSet.length,
         });
 
+        var myDatePicker = new DatePicker();
+        myDatePicker.onDateSelected = function(date) {
+            alert('Year: ' + date.getFullYear() + ' Month: ' + date.getMonth() + ' Day' + date.getDate());
+        };
         this.layout.addChild(myListView);
             
         myListView.onRowCreate = function() {
