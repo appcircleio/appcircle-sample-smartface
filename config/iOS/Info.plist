@@ -9,6 +9,8 @@
 		</dict>
 		<key>UIRequiresFullScreen</key>
 		<true/>
+                <key>UIUserInterfaceStyle</key>
+                <string>Light</string>
 		<key>NSContactsUsageDescription</key>
 		<string>Your NSContactsUsageDescription</string>
 		<key>NSPhotoLibraryUsageDescription</key>
