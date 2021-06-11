@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "@smartface/contx": "^2.2.9",
+        "@smartface/contx": "^3.0.1",
         "@smartface/html-to-text": "^1.1.1",
         "@smartface/router": "^1.5.1",
         "@smartface/styler": "^1.3.15",
