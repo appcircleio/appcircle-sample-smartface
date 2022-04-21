@@ -1,11 +1,11 @@
 {
-    "build": {
-        "output": {
-            "android": {
-                "testingDistribution": {
-                    "packageProfileName": "Default"
-                }
-            }
+  "build": {
+    "output": {
+      "android": {
+        "testingDistribution": {
+          "packageProfileName": "Default"
         }
+      }
     }
+  }
 }

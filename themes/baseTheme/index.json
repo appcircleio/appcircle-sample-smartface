@@ -1,6 +1,6 @@
 {
-	"Paths": {
-		"defaults": "/styles/defaults",
-		"pages": "/styles/pages"
-	}
+  "Paths": {
+    "defaults": "/styles/defaults",
+    "pages": "/styles/pages"
+  }
 }

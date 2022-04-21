@@ -1,8 +1,8 @@
 {
 	"components": [
 		{
-			"className": ".sf-listViewItem .sf-listViewItem-simple",
-			"hiddenComponent": true,
+			"className": ".sf-listViewItem .simple-listviewItem",
+			"hiddenComponent": false,
 			"id": "1841-ff9a-b968-028d",
 			"initialized": true,
 			"props": {
@@ -11,7 +11,7 @@
 					"8474-887d-3102-405e",
 					"bd8f-5e00-4110-7fd7"
 				],
-				"name": "simple_listviewitem",
+				"name": "simple_listviewItem",
 				"parent": "57f4-201f-4bfc-5fc6"
 			},
 			"source": {
@@ -20,12 +20,12 @@
 			"type": "ListViewItem",
 			"userProps": {
 				"flexProps": {},
-				"left": 22.82608695652174,
-				"top": 50
+				"left": 0,
+				"top": 361.9047619047619
 			}
 		},
 		{
-			"className": ".sf-label .sf-listViewItem-simple-title",
+			"className": ".sf-label .simple-listviewItem-title",
 			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
 				"autoHeight": 51.086956521739125,
@@ -47,7 +47,7 @@
 			}
 		},
 		{
-			"className": ".sf-label .sf-listViewItem-simple-chevron",
+			"className": ".sf-label .simple-listviewItem-chevron",
 			"id": "8474-887d-3102-405e",
 			"props": {
 				"autoHeight": 51.086956521739125,
@@ -69,7 +69,7 @@
 			}
 		},
 		{
-			"className": ".sf-flexLayout .sf-listViewItem-simple-line",
+			"className": ".sf-flexLayout .simple-listviewItem-line .simple-listviewItem-simple-chevron",
 			"id": "bd8f-5e00-4110-7fd7",
 			"props": {
 				"children": [],
