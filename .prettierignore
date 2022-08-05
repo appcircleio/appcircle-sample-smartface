@@ -1,0 +1,12 @@
+.npm/*
+output/*
+plugins/*
+images
+node_modules/
+scripts/generated
+.DS_Store
+/packages
+dist
+*.cpx
+*.pgx
+themes/**/**.json

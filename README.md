@@ -1,45 +1,55 @@
-# Appcircle Sample App for Smartface Builds
-This is a sample Smartface app for testing Smartface App build functionality in Appcircle. As a cross-platform project, this repository can be used both for iOS and Android builds.
-ddddd
-## Using the Appcircle Build Module
-You can find more information about the Appcircle Build Module and how to connect a Git repository in the [Appcircle Documentation](https://docs.appcircle.io/build/).
-
-## Contribution
-You can  contribute to this repository with fixes and feature updates that do not deviate from the original purpose of the app, which is to demonstrate how the Appcircle Build Module is used.
-
-## Reporting an Issue / Reaching Us
-If you encounter any issues related with the app in this repository, you can raise an issue here.
-If you have any other issues or questions about Appcircle, you can contact us via our [contact form on Appcircle.io](https://appcircle.io/support) or join our Slack community at [slack.appcircle.io](slack.appcircle.io)
-
-Original app readme follows:
-
----
-
-     ____                       _    __                      _       
-    / ___| _ __ ___   __ _ _ __| |_ / _| __ _  ___ ___      (_) ___  
-    \___ \| '_ ` _ \ / _` | '__| __| |_ / _` |/ __/ _ \     | |/ _ \ 
+     ____                       _    __                      _
+    / ___| _ __ ___   __ _ _ __| |_ / _| __ _  ___ ___      (_) ___
+    \___ \| '_ ` _ \ / _` | '__| __| |_ / _` |/ __/ _ \     | |/ _ \
      ___) | | | | | | (_| | |  | |_|  _| (_| | (_|  __/  _  | | (_) |
-    |____/|_| |_| |_|\__,_|_|   \__|_|  \__,_|\___\___| (_) |_|\___/ 
+    |____/|_| |_| |_|\__,_|_|   \__|_|  \__,_|\___\___| (_) |_|\___/
     -----------------------------------------------------------------
 
+Hey fellow developer, thank you for using Smartface!
 
-Hey fellow developer, thank you for using Smartface Cloud!
+Developing native apps for iOS and Android is as easy as a few lines of code.
 
-Developing native apps for iOS and Android is as easy as a few lines of
-JavaScript code.
+Start coding right away and to view your app instantly on a real device, just click the Run on Device button and follow the instructions.
 
-Start coding right away and to view your app instantly on a real device,
-just click the Run on Device button and follow the instructions.
-
-You can also update your native apps remotely and manage their lifecycle
-end-to-end, fully in the cloud.
+> [Appcircle.io](https://appcircle.io/) fully supports Smartface CI/CD Processes. You can build, distribute & deploy your Smartface Code Under 10 Minutes!
 
 Welcome to the world of mobility!
-Smartface Team.
+Smartface Inc..
+
+## Usage
+
+Smartface Services use `yarn` as their node package manager.
+In order to use Smartface fully, your computer should have `yarn` installed globally.
+Follow the [official yarn install documentation](https://classic.yarnpkg.com/en/docs/install) to get it on your computer.
+
+### Node Version
+
+Smartface and their modules works the best at Node Version 12. To manage Node Versions easily, Smartface recommends to use NVM.
+
+For Mac/Linux: https://github.com/nvm-sh/nvm
+For Windows: https://github.com/coreybutler/nvm-windows
+
+## Build or watch a workspace in a computer
+
+Smartface IDE will run these tasks for you. However, if you want to keep track of them on your own,
+refer to the npm scripts located at `package.json`.
+
+- Watch for UI Changes
+  ` yarn run watch:sf`
+- Build the Smartface Project
+  ` yarn run build:sf`
+- Run Typescript Compiler on Build mode
+  ` yarn run build:tsc`
+- Run Typescript Compiler on watch mode
+  ` yarn run watch:tsc`
+
+## Linter&Formatter Configuration
+
+For ease of usage, basic configuration of ESLint and Prettier are included in the project.
+You can either use as is, expand it or delete them.
 
 ## Support & Documentation & Useful Links
 
-- [Guides](https://developer.smartface.io)
+- [Guides](https://docs.smartface.io)
 - [API Docs](http://ref.smartface.io)
-- [Smartface Cloud Dashboard](https://cloud.smartface.io)
-- [Download Smartface On-Device Emulator](https://smf.to/app) (Works only from your device)
+- [Download Smartface On-Device Emulator](https://e.smartface.io) (Works only for Physical Devices)

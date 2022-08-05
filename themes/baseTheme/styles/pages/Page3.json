@@ -1,0 +1,12 @@
+{
+  "#page3": {
+    "&-btnGoBack": {
+      "flexProps": {
+        "alignSelf": "STRETCH"
+      }
+    },
+    "flexProps": {
+      "justifyContent": "FLEX_END"
+    }
+  }
+}

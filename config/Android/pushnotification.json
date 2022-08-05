@@ -1,17 +1,17 @@
 {
-    "title": {
-        "data": {
-            "title": ""
-        }
-    },
-    "body": {
-        "data": {
-            "body": ""
-        }
-    },
-    "icon": {
-        "data": {
-            "icon": ""
-        }
+  "title": {
+    "data": {
+      "title": ""
     }
+  },
+  "body": {
+    "data": {
+      "body": ""
+    }
+  },
+  "icon": {
+    "data": {
+      "icon": ""
+    }
+  }
 }
